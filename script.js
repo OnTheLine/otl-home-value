@@ -15,14 +15,14 @@ map.attributionControl
 .setPrefix('View <a href="https://github.com/ontheline/otl-home-value" target="_blank">data and code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>; design by <a href="http://ctmirror.org">CT Mirror</a>');
 
 // Basemap CartoDB layer with no labels
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2lgt_1_9e472fb45845ca23e883e1aa', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright"> \
   OpenStreetMap</a> contributors, &copy; \
   <a href="http://cartodb.com/attributions">CartoDB</a>'
 }).addTo(map);
 
 // CartoDB Labels only, put in marker pane so they're above choropleth
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png?key=cb1_2lgt_1_9e472fb45845ca23e883e1aa', {
   pane: 'markerPane',
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright"> \
   OpenStreetMap</a> contributors, &copy; \
